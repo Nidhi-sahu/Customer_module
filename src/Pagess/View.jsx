@@ -16,6 +16,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 
+
 const View = () => {
 
   const [open, setOpen] = useState(false);
@@ -31,10 +32,10 @@ const View = () => {
   return (
     <>
    {/* <h3 style={{paddingTop:'20px',paddingLeft:'570px'}}>Beauty, Food, Toys & more</h3> */}
- <Button  variant="light" style={{marginLeft:'0px',marginTop:'15px',border:'none'}} onClick={showDrawer}>
+ <Button  className='bttnn' variant="light" style={{marginLeft:'0px',marginTop:'90px',border:'none'}} onClick={showDrawer}>
 < FiMenu style={{fontSize:'45px',paddingBottom:'10px',color:'#2874f0'}}/>
       </Button>
-      <Drawer title=" " placement="left" onClose={onClose} open={open} style={{width:'70%',boxShadow:'none'}}> 
+      <Drawer title=" " placement="left" onClose={onClose} open={open} style={{width:'70%',boxShadow:'none',paddingTop:'70px'}}> 
 
       <DropdownButton  title="Category" >
       <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -48,7 +49,7 @@ const View = () => {
       <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
       </DropdownButton>
       </Drawer> 
-    <div style={{display:'flex',paddingTop:'20px'}}>
+    <div  className="boxx"style={{display:'flex',paddingTop:'40px'}}>
 
 <div  className='box' style={{marginLeft:'70px'}}>  
         <Card style={{ width: '14rem' }}>
@@ -56,8 +57,8 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Baby</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:'primary'}}>View</Button> 
       </Card.Body>
     </Card>
                  
@@ -69,8 +70,8 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Machine</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
       </Card.Body>
     </Card>
  
@@ -83,8 +84,8 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'45px',marginBottom:'5px'}}>Headphones</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
       </Card.Body>
     </Card>
  
@@ -96,8 +97,8 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Camera</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
       </Card.Body>
     </Card>
  
@@ -109,8 +110,8 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
       </Card.Body>
     </Card>
  
@@ -120,7 +121,7 @@ const View = () => {
 
     {/* section2 */}
 
-    <div style={{display:'flex',paddingTop:'50px'}}>
+    <div className="boxx" style={{display:'flex',paddingTop:'50px'}}>
 
 <div  className='box' style={{marginLeft:'70px'}}>  
         <Card style={{ width: '14rem' }}>
@@ -128,8 +129,9 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
+     
       </Card.Body>
     </Card>
                  
@@ -141,8 +143,9 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
+      
       </Card.Body>
     </Card>
  
@@ -155,8 +158,9 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
+       
       </Card.Body>
     </Card>
  
@@ -168,21 +172,21 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+         <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button>  
+        
       </Card.Body>
     </Card>
- 
+ </div>
 
-</div>
 <div  className='box' style={{marginLeft:'70px'}}>  
         <Card style={{ width: '14rem' }}>
       <Card.Img  src={thirteen} style={{height:'120px',width:'120px',marginLeft:'50px',marginTop:'20px'}}/>
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Headphone</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
       </Card.Body>
     </Card>
  
@@ -192,7 +196,7 @@ const View = () => {
 
     {/* section3 */}
 
-    <div style={{display:'flex',paddingTop:'50px',paddingBottom:'40px'}}>
+    <div  className="boxx" style={{display:'flex',paddingTop:'50px',paddingBottom:'40px'}}>
 
 <div  className='box' style={{marginLeft:'70px'}}>  
         <Card style={{ width: '14rem' }}>
@@ -200,8 +204,8 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
       </Card.Body>
     </Card>
                  
@@ -213,8 +217,9 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
+       
       </Card.Body>
     </Card>
  
@@ -227,8 +232,8 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
       </Card.Body>
     </Card>
  
@@ -240,8 +245,9 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
+        
       </Card.Body>
     </Card>
  
@@ -253,8 +259,8 @@ const View = () => {
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
-      <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+      {/* <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title> */}
+      <Button variant="primary" style={{marginLeft:'60px',marginTop:'10px',backgroundColor:''}}>View</Button> 
       </Card.Body>
     </Card>
  </div>

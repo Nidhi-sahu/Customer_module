@@ -1,0 +1,34 @@
+
+/* .cartt{
+    height:450px;
+    width:70%;
+    margin-top:60px;
+    border:2px solid;
+    padding:10px;
+    margin:20px;
+    margin-bottom: 180px;
+    margin-left:200px;
+}
+
+
+
+
+@media only screen and (max-width:600px)
+{
+   
+    .cartt{
+      margin-left:50px;
+    }
+} */
+
+
+@media only screen and (max-width:600px)
+{
+  .vh-100{
+ height:100px;
+ margin-bottom:150px;
+  }
+  .justify-content-end{
+    margin-bottom:100px;
+  }
+}

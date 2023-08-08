@@ -21,7 +21,7 @@ import fourteen from '../Image/fourteen.webp';
 const Dashboard = () => {
   return (
     <>
-    <div style={{paddingTop:'10px',width:'100%'}}>   
+    <div style={{paddingTop:'80px',width:'100%'}}>   
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -61,23 +61,25 @@ const Dashboard = () => {
                 </Carousel> 
 
                    {/* section 2 */}
-                   <h2 style={{paddingTop:'10px',paddingLeft:'650px'}}>TOP OFFERS</h2>
-             <div style={{display:'flex',paddingTop:'2px',backgroundColor:'white'}}>
+                     <h2  className='tag' 
+                    //  style={{paddingTop:'10px',paddingLeft:'650px'}}
+                     >TOP OFFERS</h2>  
+             <div className="boxx" style={{display:'flex',paddingTop:'2px',backgroundColor:'white'}}>
              <div  className='box' style={{marginLeft:'70px'}}>  
-        <Card style={{ width: '14rem' }}>
+        <Card className="card"  style={{ width: '14rem' }}>
       <Card.Img  src={five} style={{height:'120px',width:'120px',marginLeft:'50px',marginTop:'20px'}}/>
       <Card.Body>
        
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px'}}>Mobiles</Card.Title>
       <Card.Title style={{marginLeft:'55px',marginBottom:'5px',fontSize:'15px',color:'green'}}>Shop Now!</Card.Title>
-        {/* <Button variant="primary">View</Button> */}
+       
       </Card.Body>
     </Card>
                  
                </div>
 
              <div   className='box' style={{marginLeft:'60px'}}>
-             <Card style={{ width: '14rem' }}>
+             <Card className="card"   style={{ width: '14rem' }}>
       <Card.Img  src={six} style={{height:'120px',width:'120px',marginLeft:'50px',marginTop:'20px'}}/>
       <Card.Body>
         <Card.Title style={{marginLeft:'30px',marginBottom:'5px'}}>Top Cameras</Card.Title>
@@ -88,7 +90,7 @@ const Dashboard = () => {
                </div>
 
              <div className='box' style={{marginLeft:'40px'}}> 
-             <Card style={{ width: '14rem' }}>
+             <Card className="card"  style={{ width: '14rem' }}>
       <Card.Img  src={seven}  style={{height:'120px',width:'120px',marginLeft:'50px',marginTop:'20px'}}/>
       <Card.Body>
         
@@ -99,7 +101,7 @@ const Dashboard = () => {
     </div>
 
                <div className='box'  style={{marginLeft:'60px'}}>
-               <Card style={{ width: '14rem' }}>
+               <Card className="card"  style={{ width: '14rem' }}>
       <Card.Img  src={eight}  style={{height:'120px',width:'120px',marginLeft:'50px',marginTop:'20px'}}/>
       <Card.Body>
       <Card.Title style={{marginLeft:'50px',marginBottom:'5px'}}>Makeup</Card.Title>
@@ -110,7 +112,7 @@ const Dashboard = () => {
               </div> 
 
               <div className='box'  style={{marginLeft:'60px'}}>
-               <Card style={{ width: '14rem' }}>
+               <Card className="card"  style={{ width: '14rem' }}>
       <Card.Img  src={nine}  style={{height:'120px',width:'120px',marginLeft:'50px',marginTop:'20px'}}/>
       <Card.Body>
       <Card.Title style={{marginLeft:'60px',marginBottom:'5px'}}>Flasks</Card.Title>
@@ -120,15 +122,17 @@ const Dashboard = () => {
    </div> 
     </div>
   </div>
-    
+     
                      {/* section3 */}
-    <h2 style={{paddingTop:'10px',paddingLeft:'650px'}}>PRODUCTS</h2>
-    <div style={{display:'flex',paddingTop:'2px',backgroundColor:'white'}}>
+      <h2  className='tag'
+      //  style={{paddingTop:'10px',paddingLeft:'650px'}}
+       >PRODUCTS</h2>  
+    <div className="boxx" style={{display:'flex',paddingTop:'2px',backgroundColor:'white'}}>
     
      
      
 <div className='box' style={{marginLeft:'70px'}}>  
-<Card style={{ width: '14rem' }}>
+<Card  className="card" style={{ width: '14rem' }}>
 <Card.Img  src={ten} style={{height:'120px',width:'120px',marginLeft:'60px',marginTop:'30px'}}/>
 <Card.Body>
 
@@ -141,7 +145,7 @@ const Dashboard = () => {
       </div>
 
     <div  className='box' style={{marginLeft:'60px'}}>
-    <Card style={{ width: '14rem' }}>
+    <Card  className="card" style={{ width: '14rem' }}>
 <Card.Img  src={eleven} style={{height:'120px',width:'120px',marginLeft:'45px',marginTop:'25px'}}/>
 <Card.Body>
 
@@ -153,7 +157,7 @@ const Dashboard = () => {
       </div>
 
     <div className='box' style={{marginLeft:'40px'}}> 
-    <Card style={{ width: '14rem' }}>
+    <Card className="card" style={{ width: '14rem' }}>
 <Card.Img  src={twelve} style={{height:'120px',width:'120px',marginLeft:'45px',marginTop:'25px'}}/>
 <Card.Body>
 <Card.Title style={{marginLeft:'35px',marginBottom:'6px'}}>Baby Bathing</Card.Title>
@@ -189,9 +193,10 @@ const Dashboard = () => {
       
      </div> 
    </div>
-    <div style={{height:'100px',backgroundColor:'white',marginTop:'20px',paddingLeft:'1400px',paddingTop:'15px',borderWidth:'2px'}}>
-    <button className="btn  btn-lg btn-primary btn-block1" style={{marginTop:'5px',borderRadius:'5px',backgroundColor:'',color:'white'}}><NavLink to="/view"  style={{ color: 'white',LinkStyle:'none' }}>View </NavLink></button>
-   </div> 
+    <div  className=" btnnn"style={{height:'100px',backgroundColor:'white',marginTop:'20px',paddingLeft:'50px',paddingTop:'15px',borderWidth:'2px'}}>
+    <button className="btn  btn-lg btn-primary btn-block1" style={{marginTop:'5px',borderRadius:'5px',backgroundColor:'',color:'white'}}><NavLink to="/view"  style={{ color: 'white',LinkStyle:'none',textDecoration:'none' }}>View </NavLink></button>
+   </div>  
+   
   </>
  
   )
